@@ -1,1 +1,4 @@
-py main.py
+@echo off
+python main.py
+pause
+exit

@@ -19,9 +19,6 @@ async def clone():
     cloner = ServerCloner(client, guild, new_guild, clear=clear_server)
     await cloner.start()
     log(blue+'[ServerCloner]'+r, 'Server cloning process completed.')
-    if windows:
-        os.system('title ServerCloner - Completed')
-        os.system('pause')
 
 @client.event
 async def on_ready():
